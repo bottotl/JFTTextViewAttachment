@@ -48,7 +48,7 @@
     NSMutableAttributedString *textAttrStr = [[NSMutableAttributedString alloc] initWithString:@"😊😊😊😊😊😊"];
 
     [textAttrStr appendAttributedString:({
-        CGRect btnRect = CGRectMake(0, 0 , 100, 20);
+        CGRect btnRect = CGRectMake(0, 0 , 80, 20);
         JFTTextAttachment *attach = [[JFTTextAttachment alloc] init];
         attach.image = [UIImage imageNamed:@"02_top"];
         attach.bounds = btnRect;
@@ -58,7 +58,7 @@
         };
         attach.view = ({
             UIButton *btn = [[UIButton alloc] init];
-            [btn setTitle:@"👿👿👿👿" forState:UIControlStateNormal];
+            [btn setTitle:@"UIButton" forState:UIControlStateNormal];
             btn.backgroundColor = [UIColor redColor];
             [self.textView addSubview:btn];
             btn;
@@ -79,7 +79,7 @@
         };
         attach.view = ({
             UIButton *btn = [[UIButton alloc] init];
-            [btn setTitle:@"😊😊😊😊😊" forState:UIControlStateNormal];
+            [btn setTitle:@"button" forState:UIControlStateNormal];
             btn.backgroundColor = [UIColor redColor];
             [self.textView addSubview:btn];
             btn;
