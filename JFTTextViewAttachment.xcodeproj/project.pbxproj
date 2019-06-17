@@ -14,6 +14,8 @@
 		284E2A0722B3A2EA00738CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284E2A0622B3A2EA00738CBA /* Assets.xcassets */; };
 		284E2A0A22B3A2EA00738CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284E2A0822B3A2EA00738CBA /* LaunchScreen.storyboard */; };
 		284E2A0D22B3A2EA00738CBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E2A0C22B3A2EA00738CBA /* main.m */; };
+		2884405522B3A6950018D0EE /* JFTTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2884405422B3A6950018D0EE /* JFTTextAttachment.m */; };
+		28B802F922B76D890072A5C8 /* JFTTextLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B802F822B76D890072A5C8 /* JFTTextLayoutManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		284E2A0922B3A2EA00738CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284E2A0B22B3A2EA00738CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		284E2A0C22B3A2EA00738CBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		284E2A1322B3A30C00738CBA /* JFTTextViewAttachment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JFTTextViewAttachment.entitlements; sourceTree = "<group>"; };
+		2884405322B3A6950018D0EE /* JFTTextAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTTextAttachment.h; sourceTree = "<group>"; };
+		2884405422B3A6950018D0EE /* JFTTextAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTTextAttachment.m; sourceTree = "<group>"; };
+		28B802F722B76D890072A5C8 /* JFTTextLayoutManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTTextLayoutManager.h; sourceTree = "<group>"; };
+		28B802F822B76D890072A5C8 /* JFTTextLayoutManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTTextLayoutManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 		284E29F922B3A2E900738CBA /* JFTTextViewAttachment */ = {
 			isa = PBXGroup;
 			children = (
+				284E2A1322B3A30C00738CBA /* JFTTextViewAttachment.entitlements */,
 				284E29FA22B3A2E900738CBA /* AppDelegate.h */,
 				284E29FB22B3A2E900738CBA /* AppDelegate.m */,
 				284E29FD22B3A2E900738CBA /* SceneDelegate.h */,
@@ -72,6 +80,10 @@
 				284E2A0822B3A2EA00738CBA /* LaunchScreen.storyboard */,
 				284E2A0B22B3A2EA00738CBA /* Info.plist */,
 				284E2A0C22B3A2EA00738CBA /* main.m */,
+				2884405322B3A6950018D0EE /* JFTTextAttachment.h */,
+				2884405422B3A6950018D0EE /* JFTTextAttachment.m */,
+				28B802F722B76D890072A5C8 /* JFTTextLayoutManager.h */,
+				28B802F822B76D890072A5C8 /* JFTTextLayoutManager.m */,
 			);
 			path = JFTTextViewAttachment;
 			sourceTree = "<group>";
@@ -146,6 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2884405522B3A6950018D0EE /* JFTTextAttachment.m in Sources */,
+				28B802F922B76D890072A5C8 /* JFTTextLayoutManager.m in Sources */,
 				284E2A0222B3A2E900738CBA /* ViewController.m in Sources */,
 				284E29FC22B3A2E900738CBA /* AppDelegate.m in Sources */,
 				284E2A0D22B3A2EA00738CBA /* main.m in Sources */,
@@ -289,7 +303,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JFTTextViewAttachment/JFTTextViewAttachment.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				INFOPLIST_FILE = JFTTextViewAttachment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,6 +313,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jft0m.JFTTextViewAttachment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,7 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JFTTextViewAttachment/JFTTextViewAttachment.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				INFOPLIST_FILE = JFTTextViewAttachment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jft0m.JFTTextViewAttachment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
